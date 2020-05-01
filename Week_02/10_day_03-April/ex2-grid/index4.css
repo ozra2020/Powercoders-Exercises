@@ -1,0 +1,66 @@
+
+  .My-Container {
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar navbar navbar navbar navbar' 'header header header header header header header' 'content content content content content content content' 'signup signup signup signup signup signup signup' 'feature1 feature1 feature1 feature1 feature1 feature1 feature1' 'feature2 feature2 feature2 feature2 feature2 feature2 feature2' 'feature3 feature3 feature3 feature3 feature3 feature3 feature3';
+  background-color: aquamarine;
+  }
+
+  .navbar {
+    grid-area: navbar;
+    background-color: #082cfa !important;
+    color: black;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #08d6fa !important;
+    color: black;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .content {
+    grid-area: content;
+    background-color: #d9dcdd !important;
+    color: black;
+    padding: 200px;
+    text-align: center;
+  }
+  
+  .signup {
+    grid-area: signup;
+    background-color: #08d6fa !important;
+    color: black;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  .feature1 {
+    grid-area: feature1;
+    background-color: #dd8716 !important;
+    color:black;
+    padding: 35px;
+    text-align: center;
+
+  }
+  .feature2 {
+    grid-area: feature2;
+    background-color: #ee0d89 !important;
+    color:black;
+    padding: 35px;
+    text-align: center;
+
+  }
+  .feature3 {
+    grid-area: feature3;
+    background-color: #f10ff1 !important;
+    color:black;
+    padding: 35px;
+    text-align: center;
+
+  }
+  
+
+  

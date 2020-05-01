@@ -1,0 +1,32 @@
+input = lowest.number = 1 , higher.number= 100
+output = the certainn number
+Explanation = ask the user question to guess the number
+==========
+Start 
+variable of the numbers
+var lowest = 1;
+var highest = 100;
+var middle = ( lowest + highest ) / 2 ;
+
+
+prompt = ("is your number middle?");
+answer= yes; Stop the loop
+
+answer = No;
+
+prompt = ("is your number heigher than middle?");
+ answer= yes;
+lowest = middle ;
+middle = (lowest + highest) /2 ;
+
+ answer = No;
+ highest = middle;
+ middle = (lowest + highest) /2 ;
+
+
+
+
+End 
+
+
+

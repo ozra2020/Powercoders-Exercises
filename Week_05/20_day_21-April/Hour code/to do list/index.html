@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 6px 15px 20px;
+  list-style-type: none;
+  background: white;
+  font-size: 17px; 
+}
+
+ul li.checked {
+
+
+  text-decoration: line-through;
+}
+
+
+.header {
+  padding: 30px 40px;
+  color: black;
+  text-align: center;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.363);
+  width: 80%;
+  padding: 10px;
+  float: left;
+}
+
+.button {
+  padding: 10px;
+  width: 20%;
+  background: #a8a6a6;
+  color: black;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #bbb;
+}
+</style>
+</head>
+<body >
+
+<div id="todo" class="header">
+  <h1>My to do List</h1>
+  <input type="text" id="inputList" placeholder="Title...">
+  <span onclick="newElement()" class="button">Add</span>
+</div>
+
+<ul id="todolist">
+        <li class="checked">Wash the cloths</li>
+        <li >Pay Insurence bills</li>
+        <li>Shopping</li>
+        <li>Learn about JavaScript</li>
+        <li>Vacuum Cleaner</li>
+        <li>Update my Learn Blog</li>
+        <li>Change the Bandage of my Knee</li>
+        <li>To do the Exercises</li>
+      </ul>
+
+<script>
+  var password;
+
+var pass="Asma2020";
+
+password=prompt("Please enter your password to view To Do List?");
+
+if (password===pass)
+  alert("Password Correct, Click OK to enter");
+else if( password != pass){
+
+    alert("you can not access to my TodoList, please try again!");
+    }
+  
+function newElement(){
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("inputList").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("Please writhe Items to the  To Do List!");
+  } else {
+    document.getElementById("todolist").appendChild(li);
+  }
+  document.getElementById("inputList").value = "";
+}
+</script>
+
+</body>
+</html>
+

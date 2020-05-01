@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Exercise1:Profile</title>
+      <hr>
+    </head>
+<body>
+  <header>
+    <h1><b>Profil</b></h1>
+    <p><b>Hier können Sie Ihre Adress-Angaben einsehen und anpassen.</b></p><br>
+    <hr>
+  </header>
+  <section>
+    <h4>Persönlichen Daten</h4><br>
+  </section>
+   <form action="/action_page.php">
+     <label for="title">Title:</label>
+       <input type="text" id="title" name="title" placeholder="Dr. hc"><br><br>
+     <label for="fname">Vorname:</label>
+       <input type="text" id="fname" name="fname" placeholder="Peter"><br><br>
+     <label for="lname">Nachname:</label>
+       <input type="text" id="lname" name="lname" placeholder="Muster"><br><br>
+     <label for="geschlecht">Geschlecht:</label>
+     <label for="W">W</label>
+       <input  type="radio" id="W"  name="geschlecht" value="Weiblich" >
+       <label for="M">M</label>
+       <input type="radio" id="M" name="geschlecht" value="Männlich"><br><br>
+     <label for="sprache">Sprache:</label>
+     <label for="DE">DE</label>
+       <input type="radio" name="sprache" id="DE" >
+       <label for="FR">FR</label>
+       <input type="radio" name="sprache" id="FR" >
+       <label for="IT">IT</label>
+       <input type="radio" name="sprache" id="IT" ><br><br>
+       <hr>
+  <section>
+    <h4>Kontaktdaten</h4><br>
+  </section>
+    <label for="telefon">Telefon:</label>
+      <input type="tel" id="telefon" name="telefon" required><br><br>
+    <label for="mobile">Mobile:</label>
+      <input type="tel" id="mobile" name="mobile" placeholder="optional"><br><br>
+    <label for="hauptnummer">Hauptnummer:</label>
+      <input type="tel" id="hauptnummer" name="hauptnummer" placeholder="optional"><br><br>
+    <label for="fax">Fax:</label>
+      <input type="tel" id="fax" name="fax" placeholder="optional"><br><br>
+    <label for="mail1">Mail 1:</label>
+      <input type="email" name="mail1" id="mail1" placeholder="@gmail.com" required><br><br>
+    <label for="mail2">Mail 2:</label>
+      <input type="email" name="mail2" id="mail2" placeholder="optional"><br><br>
+      <hr>
+  <section>
+    <h4>Adressdaten</h4><br>
+  </section>
+    <label for="firma">Firma:</label>
+      <input type="text" id="firma" name="firma" required><br><br>
+    <label for="zusatz firma">Zusatz Firma:</label>
+      <input type="text" id="zusatz firma" name="zusatz firma" placeholder="optional"><br><br>
+    <label for="hompage">Hompage:</label>
+      <input type="email" name="hompage" id="hompage" placeholder="optional"><br><br>
+    <label for="adresse">Adresse/Haus Nr:</label>
+      <input type="text" id="adresse" name="adresse" placeholder="Musterstrasse">
+    <label for="hausenummer"></label>
+      <input type="Number" id="hausenummer" name="hausenummer" placeholder="33"><br><br>
+    <label for="zusatzadresse">Zusatz Adresse:</label>
+      <input type="text" id="zusatzadresse" name="zusatzadresse" placeholder="optional"><br><br>
+    <label for="postfach">Postfach:</label>
+      <input type="number" id="postfach" name="postfach" placeholder="optional"><br><br>
+    <label for="plz">PLZ/ORT:</label>
+      <input type="nummber" id="plz" name="plz" placeholder="8850">
+    <label for="ort"></label>
+      <input typer="text" id="ort" name="ort" placeholder="Musterstadt"><br><br>
+    <label for="kanton">Kanton/Land:</label>
+      <input type="text" id="kanton" name="kanton" placeholder="ZH">
+    <label for="land"></label>
+      <input type="text" id="Land" name="Land" placeholder="Schweiz"><br><br>
+      <input type="submit" value="Speichern"><br><br>
+      <hr>
+  </form>
+</body>
+</html>

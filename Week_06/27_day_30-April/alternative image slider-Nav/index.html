@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="swiper.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://i.pinimg.com/originals/a1/88/27/a18827158c5845afc342a9bc4a1bfdcd.jpg" alt = "natural phto" width="600px" ></div>
+      <div class="swiper-slide"><img src="https://i.pinimg.com/564x/13/3d/be/133dbe13f3c33857bbd51aa2d0d574bb.jpg" alt = "natural phto" width="600px" ></div>
+      <div class="swiper-slide"><img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt = "natural phto" width="600px" ></div>
+      <div class="swiper-slide"><img src="https://i.pinimg.com/originals/d0/fc/58/d0fc58337b773304b75cf8a9535974b1.jpg" alt = "natural phto" width="600px" ></div>
+      <div class="swiper-slide"><img src="https://donkeytherapy.org/wp-content/uploads/2017/10/Free-Wallpaper-Nature-Scenes_Gg92QQ8-1210x642-1.jpg" alt = "natural phto" width="600px" ></div>
+      <div class="swiper-slide"><img src="https://images.pexels.com/photos/462118/pexels-photo-462118.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt = "natural phto" width="600px" ></div>
+      <div class="swiper-slide"><img src="https://0f14676b303fd91881eb-98dd17e178263eba3c55ca6434a72b9d.ssl.cf5.rackcdn.com/img/longform_content_images/echinacea1.jpg" alt = "natural phto" width="600px" ></div>
+      <div class="swiper-slide"><img src="https://wallpaperaccess.com/full/372581.jpg" alt = "natural phto" width="600px" ></div>
+      <div class="swiper-slide"><img src="https://www.germany.travel/media/layout/image/mobile_cluster/cluster_naturlandschaften_biosphaerenreservate.jpg" alt = "natural phto" width="600px" ></div>
+      <div class="swiper-slide"><img src="https://static2.tripoto.com/media/filter/tst/img/21850/TripDocument/marble_caves_chile.jpg" alt = "natural phto" width="600px" ></div>
+    </div>                            
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
